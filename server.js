@@ -10,27 +10,18 @@ var articleOne = {
   title: 'Article One',
   heading:'First article',
   content: 
-  <p>
-                This is a paragraph
-  </p>
+  
+                'This is a paragraph'
+  
 };
 function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
     var content = data.content;
 var htmlTemplate = 
-    <html>
-    <title>
-        ${title}
-    </title>
-    <link href="/ui/style.css" rel="stylesheet" />
-    <body>
-        <div class = "everything">
-            <h1>${heading}</h1>
-            ${content}
-        </div>
-</html>
-    ;
+    
+    '<html> <title>${title}</title><link href="/ui/style.css" rel="stylesheet" /><body><div class = "everything"><h1>${heading}</h1><p>${content}</p></div></html>'
+return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
