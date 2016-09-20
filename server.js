@@ -20,7 +20,7 @@ function createTemplate(data){
     var content = data.content;
 var htmlTemplate = 
     
-    '<html> <title>${title}</title><link href="/ui/style.css" rel="stylesheet" /><body><div class = "everything"><h1>${heading}</h1><p>${content}</p></div></html>'
+    '<html> <title>${title}</title><link href="/ui/style.css" rel="stylesheet" /><body><div class = "everything"><h1>${heading}</h1><p>${content}</p></div></html>';
 return htmlTemplate;
 }
 
