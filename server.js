@@ -10,24 +10,21 @@ var articles = {
   title: 'Article One',
   heading:'First article',
   content:
-            '<p>
-                This is a paragraph
-            </p>'
+            
+                'This is a paragraph'
     },
     'article-two' : {
         title: 'Article Two',
   heading:'Second article',
   content:
-            '<p>
-                This is a paragraph
-            </p>'
+            
+                'This is a paragraph'
     },
     'article-three' : {title: 'Article three',
   heading:'First article',
   content:
-            '<p>
-                This is a paragraph
-            </p>'
+            
+                'This is a paragraph'
     }
 };
 function createTemplate(data){
