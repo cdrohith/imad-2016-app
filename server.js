@@ -4,6 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var counter = 0;
 
 var articles = {
     'article-one' : {
@@ -34,7 +35,11 @@ function createTemplate(data){
     var htmlTemplate = '<html> <title>${title}</title><link href="/ui/style.css" rel="stylesheet" /><body><div class = "everything"><h1>${heading}</h1><p>${content}</p></div></html>';
     return htmlTemplate;
 }
-
+app.get('/counter',function(req,res) {
+    counter = counter+1;
+    res.send(counter.toString());
+    
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
